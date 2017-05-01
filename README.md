@@ -1,9 +1,8 @@
 ---
 layout: default
-permalink: /assignments/3/
 ---
 
-# Assignment 3: API Documentation
+# API Documentation
 
 ## Image API
 
