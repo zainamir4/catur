@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Catur</title>
+  <link rel="shortcut icon" href="https://i.imgflip.com/1ijjb1.jpg">
+  <link href="style/form.css" rel="stylesheet" type="text/css"/>
+  <link href="style/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a id="show_hide_form">Upload</a></li>
+      <li><a id="gallery">Galleries</a></li>
+      <li><a id="signout">SignOut</a></li>
+    </ul>
+  </div>
+
+  <header>
+    <h1>Catur</h1>
+  </header>
+
+  <!-- List of Galleries-->
+  <div id="galleries">
+  </div>
+
+   <!-- Upload Form -->
+  <div id="wrapper">
+    <form class="upload_form" id="upload_image">
+      <div class="form_title">Upload your Image</div>
+
+      <input type="text" class="form_element" id="image_title" placeholder="Image title"/>
+
+      <div>
+        <input type="radio" id="url_radio_button" class="form_element"/>
+        <span class="button_text">URL</span>
+        <input type="radio" id="file_radio_button" class="form_element"/>
+        <span class="button_text">File upload</span>
+      </div>
+
+      <input type="text" id="url" class="form_element" placeholder="Enter the image url"/>
+      <input type="file" id="file" class="form_element"/>
+
+      <button type="submit" class="btn button_text">Upload</button>
+    </form>
+  </div>
+
+  <div id="display">
+    <!-- Image Container-->
+    <div class="image_container">
+      <div id="left_arrow" class="arrows"></div>
+      <div class="image">
+        <div class="image_info_bar">
+          <div class="author_info">
+            <p id="current_image_title" class="title">Please Select A Gallery From the NavBar</p>
+            <p id="current_image_author" class="author">By: Author</p>
+          </div>
+          <div id="delete_picture" class="delete_picture"></div>
+        </div>
+        <div id="current_image_uploaded" class="resize">
+            <img src = "https://i.imgflip.com/1ijjb1.jpg" alt="Image Error"/>
+        </div>
+      </div>
+      <div id="right_arrow" class="arrows"></div>
+    </div>
+
+    <!--  Comments-->
+    <div id="comment_wrapper">
+      <div class="comment_navigation">
+        <p id="previous_comment">Previous</p>
+        <p id="next_comment">Next</p>
+      </div>
+      <div id="comments">
+      </div>
+
+      <!--  Comment Form-->
+      <div id="comment_form">
+        <form class="upload_form" id="comment">
+          <div class="form_title">Write a Comment</div>
+
+          <textarea id="comment_content" class="form_element" placeholder="Comment"></textarea>
+
+          <button type="submit" class="btn button_text">Comment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+      <a href='/credits.html'>credits</a>
+  </footer>
+
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/controller.js"></script>
+
+</body>
+</html>
